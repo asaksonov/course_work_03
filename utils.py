@@ -1,12 +1,8 @@
 from datetime import datetime, date
 import json
-from time import strftime
-
 
 def get_data():
-    """
-    Функция возвращает список транзакций из JSON
-    """
+    """Функция возвращает список транзакций из JSON"""
     with open('operations.json', 'r', encoding='utf8') as f:
         data = json.load(f)
     return data
